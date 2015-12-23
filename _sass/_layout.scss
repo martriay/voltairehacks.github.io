@@ -8,6 +8,15 @@
 
     // Positioning context for the mobile navigation icon
     position: relative;
+
+    background: rgba(255, 255, 255, 0.4);
+
+    .bg-pic {
+        position: fixed;
+        z-index: -1;
+        opacity: 0.2;
+    }
+
 }
 
 .site-title {
@@ -92,8 +101,6 @@
     }
 }
 
-
-
 /**
  * Site footer
  */
@@ -167,21 +174,31 @@
  * Static sites
  */
 .about {
-  .logo {
-    text-align: center;
-    padding-bottom: 50px;
-  }
-  img {
-    width: calc(80% - (#{$spacing-unit} / 2));
-  }
-}
-.home {
   .intro {
     text-align: center;
     padding: 80px;
   }
+
   h2 {
+    margin-top: 60px;
     font-size: 28px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+  }
+}
+
+.home {
+  .logo {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+
+
+  img {
+    width: calc(80% - (#{$spacing-unit} / 2));
   }
 }
 
